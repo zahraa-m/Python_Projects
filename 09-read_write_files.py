@@ -16,4 +16,8 @@ with open('Bohemian_Rhapsody-Queen.txt', "r") as song1:
 
 #write your name into a text file
 test=open('writing_test.txt','w')
-test.write("Hi, my name is Zahraa")
+test.write("Hi, my name is Zozo")
+test=open('writing_test.txt','r')
+print(test.read())
+test.close()
+
