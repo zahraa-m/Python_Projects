@@ -20,3 +20,7 @@ print(len(GRE))
 print(adm['GRE Score'] >= 337)
 adm1 = adm[adm['GRE Score'] >= 337]
 print(adm1)
+
+# Save GRE Values >= 337 to new CSV file
+adm1.to_csv('GRE_Scores_eg_to_337.csv')
+
