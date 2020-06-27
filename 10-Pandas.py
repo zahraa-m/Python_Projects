@@ -16,3 +16,7 @@ GRE = adm['GRE Score'].unique()
 print(GRE)
 print(len(GRE))
 
+# find GRE value >= 337
+print(adm['GRE Score'] >= 337)
+adm1 = adm[adm['GRE Score'] >= 337]
+print(adm1)
