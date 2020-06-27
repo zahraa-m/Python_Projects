@@ -3,3 +3,10 @@ import pandas as pd
 adm=pd.read_csv('Admission_Predict.csv')
 adm.head()
 print(adm)
+
+#loc
+print(adm.loc[3,'GRE Score'])
+
+#iloc
+print(adm.iloc[3,1])
+print(adm.iloc[0:3,0:3])
