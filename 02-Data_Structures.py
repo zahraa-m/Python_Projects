@@ -1,4 +1,4 @@
-#Arrays
+# Data Structures
 
 #This is a list, changeable, allows duplicate, ordered.
 a=[1,2,3,4,5,6]
