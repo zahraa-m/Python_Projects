@@ -12,18 +12,24 @@ print(x)
 x[1:3]=100, 200
 print(x)
 
-# math: add 2 vecters
-u=np.array([1,0])
-v=np.array([0,1])
+# math: add 2 vectors in python list
+u=[1,0]
+v=[0,1]
 z=[]
 for n, m in zip(u, v):
     z.append(n+m)
 print(z)
+print(type(z))
 
-#or
+# or adding 2 vectors in Numpy
 z=[]
+u=np.array([1,0])
+v=np.array([0,1])
 z=u+v
 print(z)
+print(type(z))
 
-
+# Scalar
+y=np.array([3,4])
+print(2*y)
 
