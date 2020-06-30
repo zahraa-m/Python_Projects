@@ -43,4 +43,17 @@ print(z)
 dot_p=np.dot(u, v)
 print(dot_p)
 
+#mean
+n=np.array([1, 2, 3, 4, 5])
+print(n.mean())
 
+#max
+print(max(n))
+
+#pi
+q=np.linspace(0, 2*np.pi, 100)
+g=np.sin(q)
+
+import matplotlib.pyplot as p
+p.plot(q,g)
+p.show()
