@@ -33,3 +33,14 @@ print(type(z))
 y=np.array([3,4])
 print(2*y)
 
+# Product of 2 vectors
+u=np.array([1,2])
+v=np.array([3,1])
+z=u*v
+print(z)
+
+# Dot Product
+dot_p=np.dot(u, v)
+print(dot_p)
+
+
