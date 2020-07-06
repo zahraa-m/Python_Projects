@@ -34,4 +34,16 @@ avg_bore = df['bore'].astype('float').mean(axis=0)
 print("Average of bore:", avg_bore)
 df["bore"].replace(np.nan, avg_bore, inplace=True)
 
+avg_stroke = df['stroke'].astype('float').mean(axis=0)
+print("Average of stroke:", avg_stroke)
+df["stroke"].replace(np.nan, avg_stroke, inplace=True)
+
+avg_horsepower = df['horsepower'].astype('float').mean(axis=0)
+print("Average horsepower:", avg_horsepower)
+df['horsepower'].replace(np.nan, avg_horsepower, inplace=True)
+
+avg_peakrpm = df['peak-rpm'].astype('float').mean(axis=0)
+print("Average peak rpm:", avg_peakrpm)
+df['peak-rpm'].replace(np.nan, avg_peakrpm, inplace=True)
+
 
