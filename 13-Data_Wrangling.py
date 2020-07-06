@@ -16,5 +16,14 @@ print(df.head())
 df.replace("?", np.nan, inplace=True)
 print(df.head(5))
 
+# Count missing values
+md = df.isnull()
+print(md.head(5))
+for column in md.columns.values.tolist():
+    print(column)
+    print(md[column].value_counts())
+    print(" ")
+
+
 
 
