@@ -25,5 +25,13 @@ for column in md.columns.values.tolist():
     print(" ")
 
 
+# Calculate the mean for normalized-losses, stroke, bore, horsepower and peak-rpm
+avg_norm = df["normalized-losses"].astype("float").mean(axis=0)
+print("normalized-losses mean:", avg_norm)
+df["normalized-losses"].replace(np.nan, avg_norm, inplace=True)
+
+avg_bore = df['bore'].astype('float').mean(axis=0)
+print("Average of bore:", avg_bore)
+df["bore"].replace(np.nan, avg_bore, inplace=True)
 
 
