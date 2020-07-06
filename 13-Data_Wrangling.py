@@ -46,4 +46,14 @@ avg_peakrpm = df['peak-rpm'].astype('float').mean(axis=0)
 print("Average peak rpm:", avg_peakrpm)
 df['peak-rpm'].replace(np.nan, avg_peakrpm, inplace=True)
 
+# Replace missing values with most freq value
+print(df["num-of-doors"].value_counts().idxmax())
+df["num-of-doors"].replace(np.nan, 'four', inplace=True)
+
+# Drop missing value in price column
+df.dropna(subset=["price"], axis=0, inplace=True)
+
+# Reset index
+df.reset_index(drop=True, inplace=True)
+
 
