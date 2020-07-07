@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pylab as plt
+import matplotlib.pyplot as plt
 
 fn = "https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/auto.csv"
 hn = ["symboling","normalized-losses","make","fuel-type","aspiration", "num-of-doors","body-style",
@@ -79,5 +79,15 @@ df['width'] = df['width']/df['width'].max()
 df['height'] = df['height']/df['height'].max()
 
 # Binning: Convert continuous variables into discrete variables
+df["horsepower"] = df["horsepower"].astype(int, copy=True)
+
+plt.hist(df["horsepower"])
+# x-axis and y-axis titles
+plt.xlabel("Horsepower")
+plt.ylabel("Count")
+plt.title("Horsepower Bins")
+plt.show()
+
+
 
 
