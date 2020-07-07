@@ -1,5 +1,5 @@
 # Data Science with Python
-### I have used this [Data](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/auto.csv) to practice Python with Data Science.
+I have used this [Data](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/auto.csv) to practice Python with Data Science.
 
 ## 1. Data Wrangling
 ### Handling Missing Data
