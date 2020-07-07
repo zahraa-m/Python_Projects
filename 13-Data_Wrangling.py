@@ -88,6 +88,27 @@ plt.ylabel("Count")
 plt.title("Horsepower Bins")
 plt.show()
 
+ca = np.linspace(min(df['horsepower']), max(df['horsepower']), 4)
+gn = ['Low', 'Medium', 'High']
+df['h-binned'] = pd.cut(df['horsepower'], ca, labels=gn, include_lowest=True)
+print(df[['horsepower', 'h-binned']].head(20))
+print(df["h-binned"].value_counts())
+
+plt.bar(gn, df["h-binned"].value_counts())
+plt.xlabel("Horsepower")
+plt.ylabel("Count")
+plt.title("Horsepower bins")
+plt.show()
+
+# Plot histogram with 3 bins
+plt.hist(df["horsepower"], bins=3)
+plt.xlabel("Horsepower")
+plt.ylabel("Count")
+plt.title("Horsepower bins")
+plt.show()
+
+# Dummy variable: Convert categorical variable into numerical variable
+
 
 
 
