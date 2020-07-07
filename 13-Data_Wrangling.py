@@ -11,6 +11,7 @@ hn = ["symboling","normalized-losses","make","fuel-type","aspiration", "num-of-d
 df = pd.read_csv(fn, names=hn)
 print(df.head())
 
+
 # Handling Missing Values
 # Replace ? to NaN
 df.replace("?", np.nan, inplace=True)
@@ -57,3 +58,12 @@ df.dropna(subset=["price"], axis=0, inplace=True)
 df.reset_index(drop=True, inplace=True)
 
 
+# Data formatting
+print(df.dtypes)
+
+# Convert data format
+df[["bore", "stroke"]] = df[["bore", "stroke"]].astype("float")
+df[["normalized-losses"]] = df[["normalized-losses"]].astype("int")
+df[["price"]] = df[["price"]].astype("float")
+df[["peak-rpm"]] = df[["peak-rpm"]].astype("float")
+print(df.dtypes)
