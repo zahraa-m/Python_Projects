@@ -108,6 +108,23 @@ plt.title("Horsepower bins")
 plt.show()
 
 # Dummy variable: Convert categorical variable into numerical variable
+print(df.columns)
+dummy_v1 = pd.get_dummies(df["fuel-type"])
+print(dummy_v1.head())
+
+# Rename Columns
+dummy_v1.rename(columns={'fuel-type-diesel':'gas', 'fuel-type-diesel':'diesel'}, inplace=True)
+print(dummy_v1.head())
+
+# merge df and "dummy_v1"
+df = pd.concat([df, dummy_v1], axis=1)
+
+# Drop fuel-type from df
+df.drop("fuel-type", axis=1, inplace=True)
+print(df.dtypes)
+
+# Save clean data into CSV
+df.to_csv('clean_df.csv')
 
 
 
