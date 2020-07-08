@@ -31,7 +31,6 @@ I have used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/
 | price             | object    |
 
 
-
 ## 1. Data Wrangling
 ### Handling Missing Data
 - **Replaced "?" with NaN**
