@@ -39,10 +39,10 @@ I have used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/
 - **Drop**: Dropped 2 missing values (deleted 2 rows) in **price** column.
 
 ### Data Formatting
-- **Float**: 
-- **Integer**:
-- **Mpg to L/100km**:
-- **Binning**:
+- **Float**: Converted price, bore, stroke and peak-rpm into float.
+- **Integer**: Converted normalized-losses into integer.
+- **Mpg to L/100km**: Converted city-mpg and highway-mpg from mpg into L/100km.
+- **Binning**: 
 
 ### Data Normalization
 I have normalized **length**, **width** and **height** columns, 
