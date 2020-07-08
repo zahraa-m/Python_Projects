@@ -113,7 +113,7 @@ dummy_v1 = pd.get_dummies(df["fuel-type"])
 print(dummy_v1.head())
 
 # Rename Columns
-dummy_v1.rename(columns={'fuel-type-diesel':'gas', 'fuel-type-diesel':'diesel'}, inplace=True)
+dummy_v1.rename(columns={'fuel-type-gas':'gas', 'fuel-type-diesel':'diesel'}, inplace=True)
 print(dummy_v1.head())
 
 # merge df and "dummy_v1"
