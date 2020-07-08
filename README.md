@@ -4,16 +4,18 @@ I have used this [Data](https://s3-api.us-geo.objectstorage.softlayer.net/cf-cou
 ## 1. Data Wrangling
 ### Handling Missing Data
 - **Replaced "?" with NaN**
+- **Mean**: Replaced NaN values in normalized-losses, stroke, bore, horsepower and peak-rpm columns to **mean** value of each column.
+- **The most frequent value**: Replaced NaN values in num-of-doors to the most frequent value, which is **four**.
+- **Drop**: Dropped 2 missing values (deleted 2 rows) in **price** column.
 
-- **Mean**
-<br/>Replaced NaN values in normalized-losses, stroke, bore, horsepower and peak-rpm columns to *mean* value of each column.
+### Data Formatting
+- **Float**:
+- **Integer**:
+- **Mpg to L/100km**:
+- **Binning**:
 
-- **The most frequent value**
-<br/>Replaced NaN values in num-of-doors to the most frequent value, which is *four*.
-
-- **Drop**
-<br/>Dropped 2 missing values (deleted 2 rows) in *price* column.
-
+### Data Normalization
+I have normalized **length**, **width** and **height** columns, 
 
 ## 2. Data Analysis
 
