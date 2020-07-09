@@ -31,6 +31,7 @@ I have used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/
 | price             | object    |
 
 
+
 ## 1. Data Wrangling
 ### Handling Missing Data
 - **Replaced "?" with NaN**
@@ -46,7 +47,7 @@ I have used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/
 - **Dummy variable**: Converted **fuel-type** from categorical variable to numerical variable. Where gas is 1 and diesel is 0.
 
 ### Data Normalization
-I have normalized **length**, **width** and **height** columns. 
+I have normalized **length**, **width** and **height** columns, by dividing each value to maximum value.
 
 ## 2. Data Analysis
 
