@@ -41,6 +41,43 @@ plt.show()
 sns.boxplot(x="engine-location", y="price", data=df)
 plt.show()
 
+# Descriptive Statistical analysis
+print(df.describe())
+print(df.describe(include=['object']))
+
+# Count each characteristic in drive-wheels
+print(df['drive-wheels'].value_counts())
+
+# Convert previous command into dataframe
+df['drive-wheels'].value_counts().to_frame()
+drive_wheels_counts = df['drive-wheels'].value_counts().to_frame()
+drive_wheels_counts.rename(columns={'drive-wheels': 'value_counts'}, inplace=True)
+drive_wheels_counts.index.name = 'drive-wheels'
+
+# Create group by body style with their average price
+gb = df[["body-style", 'price']]
+test2 = gb.groupby(["body-style"], as_index=False).mean()
+
+# create pivot table
+df_gptest = df[['drive-wheels','body-style','price']]
+grouped_test1 = df_gptest.groupby(['drive-wheels','body-style'],as_index=False).mean()
+grouped_pivot = grouped_test1.pivot(index='drive-wheels',columns='body-style')
+
+# Convert NaN to 0
+grouped_pivot = grouped_pivot.fillna(0)
+
+# Create heatmap plot
+plt.pcolor(grouped_pivot, cmap='RdBu')
+plt.colorbar()
+plt.show()
+
+# Pearson Correlation Coefficient and P-value
+pearson_coef, p_value = stats.pearsonr(df['wheel-base'], df['price'])
+print("The Pearson Correlation Coefficient is", pearson_coef, " with a P-value of P =", p_value)
+
+
+
+
 
 
 
