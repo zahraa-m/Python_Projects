@@ -29,7 +29,7 @@ I have used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/
 | city-mpg          | int64     |
 | highway-mpg       | int64     |
 | price             | object    |
-
+</br>
 
 
 ## 1. Data Wrangling
@@ -48,8 +48,14 @@ I have used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/
 
 ### Data Normalization
 I have normalized **length**, **width** and **height** columns, by dividing each value to maximum value.
+</br>
+</br>
 
 ## 2. Data Analysis
+- **Descriptive Statistical analysis**:
+- **Linear relationship**:
+- **Pearson Correlation**:
+- **ANOVA**:
 
 ## 3. Model Development
 
