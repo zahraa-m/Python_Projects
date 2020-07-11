@@ -27,9 +27,9 @@ I have normalized **length**, **width** and **height** columns, by dividing each
 </br>
 
 ## 2. Data Analysis
-- **Descriptive Statistical analysis**:
-- **Linear relationship**:
-- **Pearson Correlation**:
+- **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, highway-mpg and stroke.
+- **Pearson correlation**: Calculated Pearson Correlation Coefficient and P-value between Price and each of these attributes: Wheel-base, Horsepower, Length, Width, Curb-weight, Engine-size, Bore, City-mpg and Highway-mpg.
+
 - **ANOVA**:
 
 ## 3. Model Development
