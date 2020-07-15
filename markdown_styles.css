@@ -1,3 +1,15 @@
-.flex {
-  display:inline-flex;
+.pic {
+  border: 1px dotted blue;
+  display: table;
+  width: 100%;
+}
+.pic span {
+  display: table-cell;
+  width: auto;
+  border: 1px dashed red;
+  padding: 5px;
+}
+.pic span img {
+  vertical-align: top;
+  width: 100%;
 }
