@@ -27,14 +27,18 @@ I have normalized **length**, **width** and **height** columns, by dividing each
 <br/>
 
 ## 2. Data Analysis
-- **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, Highway-mpg and Stroke. There are positive linear relationship between Price and Engine-size, negative linear relationship between Price and Highway-mpg and weak linear relationship between Price and Stroke, as shown respectively in the figure below.
+- **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, Highway-mpg and Stroke. There are positive linear relationship between Price and Engine-size, negative linear relationship between Price and Highway-mpg and weak linear relationship between Price and Stroke, as shown respectively in the figures below.
 
 | <img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png" alt="The linear relationship between Price and engine-size"/> | <img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_2.png" alt="The linear relationship between Price and engine-size"/> | <img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_3.png" alt="The linear relationship between Price and engine-size"/> |
 |-|-|-|
 
 <br/>
-
+ 
 - **Pearson correlation**: Calculated Pearson Correlation Coefficient and P-value between Price and each of these attributes: Wheel-base, Horsepower, Length, Width, Curb-weight, Engine-size, Bore, City-mpg and Highway-mpg.
+- **Correlation in Categorical Variables**: By using boxplot, I have illustarted the correlation between Price and these two attributes: Body-style and Engine-location, as show in the figures below. From the plots we can conclude that .
+
+| <img width="350" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_4.png" alt="Correlation between Price and Body-style"/> | <img width="350" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_5.png" alt="Correlation between Price and Engine-location"/> |
+|-|-|
 
 - **ANOVA**:
 
