@@ -27,7 +27,7 @@ I normalize **length**, **width** and **height** columns, by dividing each value
 <br/>
 
 ## 2. Data Analysis
-- **Linear relationship**: Obtaine the linear relationship between Price and each of these attributes: Engine-size, Highway-mpg and Stroke. There are positive linear relationship between Price and Engine-size, negative linear relationship between Price and Highway-mpg and weak linear relationship between Price and Stroke, as shown respectively in the figures below.
+- **Linear relationship**: Obtain the linear relationship between Price and each of these attributes: Engine-size, Highway-mpg and Stroke. There are positive linear relationship between Price and Engine-size, negative linear relationship between Price and Highway-mpg and weak linear relationship between Price and Stroke, as shown respectively in the figures below.
 
 | <img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png" alt="The linear relationship between Price and engine-size"/> | <img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_2.png" alt="The linear relationship between Price and engine-size"/> | <img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_3.png" alt="The linear relationship between Price and engine-size"/> |
 |-|-|-|
