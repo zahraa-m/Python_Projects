@@ -112,17 +112,25 @@ pearson_coef, p_value = stats.pearsonr(df['highway-mpg'], df['price'])
 print(pearson_coef, p_value)
 
 # Analysis of Variance (ANOVA) for categorical data, such as Drive-wheels.
+# ANOVA for all Categories
+
 test2 = df[['drive-wheels', 'price']].groupby(['drive-wheels'])
-print(test2.head())
-print(test2.get_group('4wd')['price'])
-
+print("ANOVA for Drive-wheels and Price")
+f_score, p_value = stats.f_oneway(test2.get_group('fwd')['price'], test2.get_group('rwd')['price'], test2.get_group('4wd')['price'])
+print("F_Score:", f_score, "P_Value:", p_value)
+print("")
+print("")
+print("fwd vs. rwd")
 f_score, p_value = stats.f_oneway(test2.get_group('fwd')['price'], test2.get_group('rwd')['price'])
-print(f_score, p_value)
+print("F_Score:", f_score, "P_Value:", p_value)
+print("")
+print("fwd vs. 4wd")
 f_score, p_value = stats.f_oneway(test2.get_group('fwd')['price'], test2.get_group('4wd')['price'])
-print(f_score, p_value)
+print("F_Score:", f_score, "P_Value:", p_value)
+print("")
+print("4wd vs. rwd")
 f_score, p_value = stats.f_oneway(test2.get_group('4wd')['price'], test2.get_group('rwd')['price'])
-print(f_score, p_value)
-
+print("F_Score:", f_score, "P_Value:", p_value)
 
 
 
