@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" media="all" href="https://github.com/zahraa-m/Python_Projects/blob/master/markdown_styles.css" />
-
 # Data Science with Python
 This repository is for Data Analysis with Python [course](https://cognitiveclass.ai/courses/data-analysis-python). I have took this course for practicing Data Science. I used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/auto.csv) that has 26 attributes (columns) as shown in the table below and 205 instances (rows). The goal is to create models for predicting the price of cars, as well as, evaluate the model. 
 
@@ -29,9 +27,16 @@ I have normalized **length**, **width** and **height** columns, by dividing each
 <br/>
 
 ## 2. Data Analysis
-- **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, highway-mpg and stroke. There are positive linear relationship between Price and Engine-size as shown in the figure below.
+- **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, Highway-mpg and Stroke. There are positive linear relationship between Price and Engine-size as shown in the figure below.
 
-<div class="flex"><img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png" alt="The linear relationship between Price and engine-size"/><img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_2.png" alt="The linear relationship between Price and highway-mpg"/><img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_3.png" alt="The linear relationship between Price and highway-mpg"/></div>
+<img width="400" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png" alt="The linear relationship between Price and engine-size"/>
+<br/>
+Negative linear relationship between Price and Highway-mpg as illustrate in the figure below.
+<img width="400" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_2.png" alt="The linear relationship between Price and highway-mpg"/>
+<br/>
+Weak positive linear relationship between Price and Stroke as shown in the figure below.
+<img width="400" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_3.png" alt="The linear relationship between Price and highway-mpg"/>
+
 <br/>
 <br/>
 
