@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" media="all" href="https://github.com/zahraa-m/Python_Projects/blob/master/markdown_styles.css" />
+
 # Data Science with Python
 This repository is for Data Analysis with Python [course](https://cognitiveclass.ai/courses/data-analysis-python). I have took this course for practicing Data Science. I used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/auto.csv) that has 26 attributes (columns) as shown in the table below and 205 instances (rows). The goal is to create models for predicting the price of cars, as well as, evaluate the model. 
 
@@ -29,7 +31,7 @@ I have normalized **length**, **width** and **height** columns, by dividing each
 ## 2. Data Analysis
 - **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, highway-mpg and stroke. There are positive linear relationship between Price and Engine-size as shown in the figure below.
 
-<img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png" alt="The linear relationship between Price and engine-size" width="250"/><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_2.png" alt="The linear relationship between Price and highway-mpg" width="250"/><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_3.png" alt="The linear relationship between Price and highway-mpg" width="250"/>
+<div class="flex"><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png" alt="The linear relationship between Price and engine-size" width="250"/><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_2.png" alt="The linear relationship between Price and highway-mpg" width="250"/><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_3.png" alt="The linear relationship between Price and highway-mpg" width="250"/></div>
 <br/>
 <br/>
 
