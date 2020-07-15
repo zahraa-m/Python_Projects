@@ -31,7 +31,7 @@ I have normalized **length**, **width** and **height** columns, by dividing each
 ## 2. Data Analysis
 - **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, highway-mpg and stroke. There are positive linear relationship between Price and Engine-size as shown in the figure below.
 
-<div class="flex"><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png" alt="The linear relationship between Price and engine-size" width="250"/><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_2.png" alt="The linear relationship between Price and highway-mpg" width="250"/><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_3.png" alt="The linear relationship between Price and highway-mpg" width="250"/></div>
+<div class="flex"><img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png" alt="The linear relationship between Price and engine-size"/><img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_2.png" alt="The linear relationship between Price and highway-mpg"/><img width="300" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_3.png" alt="The linear relationship between Price and highway-mpg"/></div>
 <br/>
 <br/>
 
