@@ -35,7 +35,7 @@ I have normalized **length**, **width** and **height** columns, by dividing each
 <br/>
  
 - **Pearson correlation**: Calculated Pearson Correlation Coefficient and P-value between Price and each of these attributes: Wheel-base, Horsepower, Length, Width, Curb-weight, Engine-size, Bore, City-mpg and Highway-mpg.
-- **Correlation in Categorical Variables**: By using boxplot, I have illustrated the correlation between Price and these two attributes: Body-style and Engine-location, as show in the figures below. From the plots we can conclude that .
+- **Correlation in Categorical Variables**: By using boxplot, I have illustrated the correlation between Price and these two attributes: Body-style and Engine-location, as show in the figures below. From the plots we can conclude that the Engine-location is a good predictor for the Price, because its distrubation covers almost all price range, where Body-style cataories have a notable overlap.
 
 | <img width="350" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_4.png" alt="Correlation between Price and Body-style"/> | <img width="350" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_5.png" alt="Correlation between Price and Engine-location"/> |
 |-|-|
