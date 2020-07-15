@@ -4,7 +4,7 @@ This repository is for Data Analysis with Python [course](https://cognitiveclass
 | Column | symboling | normalized-losses | make | fuel-type | aspiration | num-of-doors | body-style | drive-wheels | engine-location | wheel-base | length | width | height | curb-weight | engine-type | num-of-cylinders | engine-size | fuel-system | bore | stroke | compression-ratio | horsepower | peak-rpm | city-mpg | highway-mpg | price |
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 | Data type | int64 | object | object | object | object | object | object | object | object | float64 | float64 | float64 | float64 | int64 | object | object | int64 | object | object | object | float64 | object | object | int64 | int64 | object |
-</br>
+<br/>
 
 
 ## 1. Data Wrangling
@@ -23,11 +23,15 @@ This repository is for Data Analysis with Python [course](https://cognitiveclass
 
 ### Data Normalization
 I have normalized **length**, **width** and **height** columns, by dividing each value to maximum value.
-</br>
-</br>
+<br/>
+<br/>
 
 ## 2. Data Analysis
-- **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, highway-mpg and stroke.
+- **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, highway-mpg and stroke. There are positive linear relationship between Price and Engine-size as shown in the figure below.
+<br/>
+![The linear relationship between Price and Engine-size](https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png)
+<br/>
+
 - **Pearson correlation**: Calculated Pearson Correlation Coefficient and P-value between Price and each of these attributes: Wheel-base, Horsepower, Length, Width, Curb-weight, Engine-size, Bore, City-mpg and Highway-mpg.
 
 - **ANOVA**:
