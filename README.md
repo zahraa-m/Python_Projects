@@ -28,8 +28,9 @@ I have normalized **length**, **width** and **height** columns, by dividing each
 
 ## 2. Data Analysis
 - **Linear relationship**: Obtained the linear relationship between Price and each of these attributes: Engine-size, highway-mpg and stroke. There are positive linear relationship between Price and Engine-size as shown in the figure below.
+
+<img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png" alt="The linear relationship between Price and engine-size" width="300"/><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_2.png" alt="The linear relationship between Price and highway-mpg" width="300"/><img src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_3.png" alt="The linear relationship between Price and highway-mpg" width="300"/>
 <br/>
-![The linear relationship between Price and Engine-size](https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_1.png)
 <br/>
 
 - **Pearson correlation**: Calculated Pearson Correlation Coefficient and P-value between Price and each of these attributes: Wheel-base, Horsepower, Length, Width, Curb-weight, Engine-size, Bore, City-mpg and Highway-mpg.
