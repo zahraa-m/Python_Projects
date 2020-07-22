@@ -33,8 +33,11 @@ I normalize **length**, **width** and **height** columns, by dividing each value
 |-|-|-|
 
 <br/>
- 
+<br/>
+<br/>
+
 - **Pearson correlation**: I calculate Pearson Correlation Coefficient and P-value between Price and each of these attributes: Wheel-base, Horsepower, Length, Width, Curb-weight, Engine-size, Bore, City-mpg and Highway-mpg.
+<br/>
 
 | Attributes | Pearson Correlation Coeff. | P-value |
 |:-:|:-:|:-:|
@@ -48,6 +51,8 @@ I normalize **length**, **width** and **height** columns, by dividing each value
 | City-mpg | -0.68657 | 2.32113e-29 |
 | Highway-mpg | -0.70469 | 1.74954e-31 |
 
+<br/>
+<br/>
 <br/>
 
 
