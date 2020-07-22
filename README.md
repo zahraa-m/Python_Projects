@@ -58,6 +58,8 @@ I normalize **length**, **width** and **height** columns, by dividing each value
 | <img width="350" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_4.png" alt="Correlation between Price and Body-style"/> | <img width="350" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_5.png" alt="Correlation between Price and Engine-location"/> |
 |-|-|
 
+<br/>
+<br/>
 - **ANOVA**: I calculate F-test score and P-value between Drive-wheels and Price. It shows high correlation as F-test score is 67.95. Also, P_value is near to 0, which means statistical significance between the two varibles. Additionally, Drive-wheels has 3 categories: fwd, rwd and 4wd where I calculate F-test score and P-value between fwd and rwd Price first, 4wd Price second and between rwd and 4rwd Price. Fwd vs. rwd has the higher correlation where 4wd vs. rwd has weak correlation and fwd vs. 4wd has no correlation.
 <br/>
 
