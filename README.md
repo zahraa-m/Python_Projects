@@ -35,6 +35,22 @@ I normalize **length**, **width** and **height** columns, by dividing each value
 <br/>
  
 - **Pearson correlation**: I calculate Pearson Correlation Coefficient and P-value between Price and each of these attributes: Wheel-base, Horsepower, Length, Width, Curb-weight, Engine-size, Bore, City-mpg and Highway-mpg.
+
+| Attributes | Pearson Correlation Coeff. | P-value |
+|:-:|:-:|:-:|
+| Wheel-base | 0.58464 | 8.07648e-20 |
+| Horsepower | 0.80957 | 6.36905e-48 |
+| Length | 0.69062 | 8.01647e-30 |
+| Width | 0.75126 | 9.20033e-38 |
+| Curb-weight | 0.83441 | 2.18957e-53 |
+| Engine-size | 0.87233 | 9.26549e-64 |
+| Bore | 0.54315 | 8.04918e-17 |
+| City-mpg | -0.68657 | 2.32113e-29 |
+| Highway-mpg | -0.70469 | 1.74954e-31 |
+
+<br/>
+
+
 - **Correlation in Categorical Variables**: By using boxplot, I illustrate the correlation between Price and Body-style first and Engine-location second, as shown in the figures below. From the plots we can conclude that the Engine-location is a good predictor for the Price, because its distrubation covers almost all price range, where Body-style categories have a notable overlap.
 
 | <img width="350" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_4.png" alt="Correlation between Price and Body-style"/> | <img width="350" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_5.png" alt="Correlation between Price and Engine-location"/> |
