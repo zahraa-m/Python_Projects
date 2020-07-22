@@ -36,8 +36,7 @@ I normalize **length**, **width** and **height** columns, by dividing each value
 <br/>
 <br/>
 
-- **Pearson correlation**: I calculate Pearson Correlation Coefficient and P-value between Price and each of these attributes: Wheel-base, Horsepower, Length, Width, Curb-weight, Engine-size, Bore, City-mpg and Highway-mpg.
-<br/>
+- **Pearson correlation**: I calculate Pearson Correlation Coefficient and P-value between Price and each of these attributes: Wheel-base, Horsepower, Length, Width, Curb-weight, Engine-size, Bore, City-mpg and Highway-mpg as shown in the table below.
 
 | Attributes | Pearson Correlation Coeff. | P-value |
 |:-:|:-:|:-:|
@@ -53,8 +52,6 @@ I normalize **length**, **width** and **height** columns, by dividing each value
 
 <br/>
 <br/>
-<br/>
-
 
 - **Correlation in Categorical Variables**: By using boxplot, I illustrate the correlation between Price and Body-style first and Engine-location second, as shown in the figures below. From the plots we can conclude that the Engine-location is a good predictor for the Price, because its distrubation covers almost all price range, where Body-style categories have a notable overlap.
 
