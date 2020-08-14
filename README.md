@@ -69,7 +69,14 @@ I normalize **length**, **width** and **height** columns, by dividing each value
 ## 3. Model Development
 ### Simple Linear Regression (SLR) and Multiple Linear Regression (MLR)
 I used scikit-learn library to predict the price of cars in which I created two models. The first model is simple linear regression (SLR) that has two variables, the depentent variable (target) is the Price where the independent variable (predictor) is engine-size. Furthermore, the second model is multiple linear regression (MLR) and the depentent variable is also the Price, whereas the independent variables are Highway-mpg and normalized-losses.
-
+<br/>
+<br/>
+### Evaluation of Simple Linear Regression (SLR) by visualization - Residual Plots
+<br/>
+<br/>
+### Evaluation of Multiple Linear Regression (MLR) - Distribution Plots
+<br/>
+<br/>
 ## 4. Model Evaluation
 
 
