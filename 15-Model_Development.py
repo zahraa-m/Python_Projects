@@ -13,7 +13,7 @@ print(df.head())
 from sklearn.linear_model import LinearRegression
 lm = LinearRegression()
 lm
-x = df[['highway-mpg']]
+x = df[['engine-size']]
 y = df[['price']]
 lm.fit(x, y)
 y_new = lm.predict(x)
