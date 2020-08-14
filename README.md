@@ -72,11 +72,15 @@ I used scikit-learn library to predict the price of cars in which I created two 
 <br/>
 <br/>
 ### Evaluation of Simple Linear Regression (SLR) by visualization - Residual Plots
+
 <br/>
 <br/>
+
 ### Evaluation of Multiple Linear Regression (MLR) - Distribution Plots
+
 <br/>
 <br/>
+
 ## 4. Model Evaluation
 
 
