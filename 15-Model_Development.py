@@ -26,3 +26,20 @@ print("y_new=", lm.intercept_[0], lm.coef_.item(0), "* x_new")
 lm.fit(df[['normalized-losses', 'highway-mpg']], df[['price']])
 print("The final linear model is")
 print("intercept=", lm.intercept_, "Coefficients=", lm.coef_)
+
+# Evaluate Linear models by visualization
+import seaborn as sns
+import matplotlib.pyplot as plt
+w = 8
+h = 6
+plt.figure(figsize=(w, h))
+sns.regplot(x="highway-mpg", y="price", data=df)
+plt.ylim(0,)
+plt.show()
+
+sns.regplot(x="peak-rpm", y="price", data=df)
+plt.ylim(0,)
+plt.show()
+
+# Calculate correlation between price and highway-mpg as well peak-rpm
+print(df[['highway-mpg', 'peak-rpm', 'price']].corr())
