@@ -43,3 +43,17 @@ plt.show()
 
 # Calculate correlation between price and highway-mpg as well peak-rpm
 print(df[['highway-mpg', 'peak-rpm', 'price']].corr())
+
+# Evaluate the model by finding the residuals plot for SLR
+sns.residplot(df[['highway-mpg']], df[['price']])
+plt.show()
+
+# Evaluate the model by finding the distribution plot for MLR
+y_new = lm.predict(df[['normalized-losses', 'highway-mpg']])
+ax1 = sns.distplot(df['price'], hist=False, color='r', label='Actual Values')
+sns.distplot(y_new, hist=False, color='g', label='Fitted Values', ax=ax1)
+plt.title('Actual vs Fitted Values for Price')
+plt.xlabel('Price (in dollars)')
+plt.ylabel('Proportion of Cars')
+plt.show()
+
