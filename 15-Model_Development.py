@@ -22,3 +22,7 @@ print("")
 print("The final linear model is")
 print("y_new=", lm.intercept_[0], lm.coef_.item(0), "* x_new")
 
+# Multiple Linear Regression (MLR) | independent variables = Highway-mpg and normalized-losses, dependent = Price
+lm.fit(df[['normalized-losses', 'highway-mpg']], df[['price']])
+print("The final linear model is")
+print("intercept=", lm.intercept_, "Coefficients=", lm.coef_)
