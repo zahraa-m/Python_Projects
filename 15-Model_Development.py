@@ -11,6 +11,7 @@ print(df.head())
 # predict Price By using Linear Regression model
 # Simple Linear Regression (SLR) | independent variable = Highway-mpg and dependent = Price
 from sklearn.linear_model import LinearRegression
+
 lm = LinearRegression()
 lm
 x = df[['engine-size']]
@@ -30,15 +31,16 @@ print("intercept=", lm.intercept_, "Coefficients=", lm.coef_)
 # Evaluate Linear models by visualization
 import seaborn as sns
 import matplotlib.pyplot as plt
+
 w = 8
 h = 6
 plt.figure(figsize=(w, h))
 sns.regplot(x="highway-mpg", y="price", data=df)
-plt.ylim(0,)
+plt.ylim(0, )
 plt.show()
 
 sns.regplot(x="peak-rpm", y="price", data=df)
-plt.ylim(0,)
+plt.ylim(0, )
 plt.show()
 
 # Calculate correlation between price and highway-mpg as well peak-rpm
@@ -57,3 +59,23 @@ plt.xlabel('Price (in dollars)')
 plt.ylabel('Proportion of Cars')
 plt.show()
 
+
+# Model non-linear (Polynomial) regression
+def plotpolly(model, independent_variable, dependent_variable, name):
+    x_new = np.linspace(15, 55, 100)
+    y_new = model(x_new)
+    plt.plot(independent_variable, dependent_variable, '.', x_new, y_new, '-')
+    plt.xlabel(name)
+    plt.ylabel('Price of Cars')
+    plt.show()
+    plt.close()
+
+
+# Create the model
+x = df['highway-mpg']
+y = df['price']
+n = np.polyfit(x, y, 11)
+m = np.poly1d(n)
+
+# Plot polynomial model by using plotpolly function
+plotpolly(m, x, y, 'highway-mpg')
