@@ -72,6 +72,8 @@ I used scikit-learn library to predict the price of cars in which I created two 
 <br/>
 <br/>
 ### Evaluation of Simple Linear Regression (SLR) by visualization - Residual Plots
+I created residuals plot to illustrate the distance between the highway-mpg actual data point to the regression line. The residuals shows non-linear distribution, which means the SLR model is not appropriate for predicting the price. 
+<img width="400" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_6.png" alt="Residual Plot between Price and highway-mpg"/>
 
 <br/>
 <br/>
