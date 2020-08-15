@@ -79,3 +79,13 @@ m = np.poly1d(n)
 
 # Plot polynomial model by using plotpolly function
 plotpolly(m, x, y, 'highway-mpg')
+
+# Multivariate Polynomial Regression
+from sklearn.preprocessing import PolynomialFeatures
+x = df[['normalized-losses', 'highway-mpg']]
+pr = PolynomialFeatures(degree=2)
+x_pr = pr.fit_transform(x)
+print(' ')
+print("The original data has ", x.shape[0], "rows and ", x.shape[1], "features")
+print("The Data with multivariate Polynomial Regression has ", x_pr.shape[0], "rows and ", x_pr.shape[1], "features")
+
