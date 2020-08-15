@@ -72,11 +72,15 @@ I used scikit-learn library to predict the price of cars in which I created two 
 <br/>
 <br/>
 ### Evaluation of Simple Linear Regression (SLR) by visualization - Residual Plots
+I created residuals plot to illustrate the distance between the price actual data point to the regression line. The residuals shows non-linear distribution, which means the SLR model is not appropriate for predicting the price. 
 
-<br/>
+<img width="400" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_6.png" alt="Residual Plot between Price and highway-mpg"/>
 <br/>
 
 ### Evaluation of Multiple Linear Regression (MLR) - Distribution Plots
+I created distribution plot to illustrate the distribution distance between the price actual data point to the fitted data. The plot shows a significant overlap between the two distributions, which means MLR model could be an appropriate model to predict the price. 
+
+<img width="400" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_7.png" alt=""/>
 
 <br/>
 <br/>
