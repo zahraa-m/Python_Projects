@@ -79,6 +79,7 @@ I created residuals plot to illustrate the distance between the price actual dat
 
 ### Evaluation of Multiple Linear Regression (MLR) - Distribution Plots
 I created distribution plot to illustrate the distribution distance between the price actual data point to the fitted data. The plot shows a significant overlap between the two distributions, which means MLR model could be an appropriate model to predict the price. 
+
 <img width="400" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_7.png" alt=""/>
 
 <br/>
