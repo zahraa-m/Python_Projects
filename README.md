@@ -85,6 +85,14 @@ I created distribution plot to illustrate the distribution distance between the 
 <br/>
 <br/>
 
+### Polynomial Regression
+There is non-linear relationship between the price actual data point and the fitted regression line when highway_mpg is the independent variable as shown above in the evaluation of simple linear regression. Therefore, the soluation is to use a polynomial model to fit the data. I created 11 order polynomial model to predict the price of the cars.
+
+<img width="400" src="https://github.com/zahraa-m/Python_Projects/blob/master/Plots/Figure_10.png" alt=""/>
+
+<br/>
+<br/>
+
 ## 4. Model Evaluation
 
 
