@@ -94,11 +94,11 @@ There is non-linear relationship between the price actual data point and the fit
 
 ### Pipeline Method
 I used pipeline method as a way to shorten the processing of the data as shown in the code-line 93 to 102 of [15-Model_Development.py](https://github.com/zahraa-m/Python_Projects/blob/master/15-Model_Development.py)
-
 <br/>
 
-###R-squared (R^2) and Mean Squared Error (MSE)
-I Calculated the accuracy of the models by using R^2 and MSE. 
+### R-squared (R^2) and Mean Squared Error (MSE)
+I calculated the accuracy of the models by using R^2 and MSE. 
+
 <br/>
 <br/>
 
