@@ -101,3 +101,31 @@ new_y = pip.predict(x)
 print(' ')
 print(new_y[0:5])
 
+# R^2 and MSE
+# SLR
+from sklearn.metrics import mean_squared_error as mse
+x = df[['highway-mpg']]
+y = df[['price']]
+lm.fit(x, y)
+print(' ')
+print('the R^2 for SLR is:', lm.score(x, y))
+pr = lm.predict(x)
+print('the MSE for SLR is:', mse(y, pr))
+
+
+
+# MLR
+x = df[['horsepower', 'curb-weight', 'engine-size', 'highway-mpg']]
+y = df[['price']]
+lm.fit(x, y)
+print('the R^2 for MLR is:', lm.score(x, y))
+pr = lm.predict(x)
+print('the MSE for MLR is:', mse(y, pr))
+
+# polynomial regression
+from sklearn.metrics import r2_score
+x = df[['highway-mpg']]
+y = df[['price']]
+print('the R^2 for polynomial regression is:', r2_score(y, m(x)))
+print('the MSE for polynomial regression is:', mse(y, m(x)))
+
