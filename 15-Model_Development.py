@@ -3,6 +3,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import pipe as pipe
 
 URL = 'https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/automobileEDA.csv'
 df = pd.read_csv(URL)
@@ -88,4 +89,15 @@ x_pr = pr.fit_transform(x)
 print(' ')
 print("The original data has ", x.shape[0], "rows and ", x.shape[1], "features")
 print("The Data with multivariate Polynomial Regression has ", x_pr.shape[0], "rows and ", x_pr.shape[1], "features")
+
+# Pipeline
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+inp = [('scaler', StandardScaler()), ('model', LinearRegression())]
+pip = Pipeline(inp)
+x = df[['normalized-losses', 'highway-mpg']]
+pip.fit(x, df['price'])
+new_y = pip.predict(x)
+print(' ')
+print(new_y[0:5])
 
