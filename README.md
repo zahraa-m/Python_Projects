@@ -93,6 +93,12 @@ There is non-linear relationship between the price actual data point and the fit
 <br/>
 <br/>
 
+### Pipeline Method
+I used pipeline method as a way to shorten the processing of the data as shown in the code-line 93 to 102 of [15-Model_Development.py](https://github.com/zahraa-m/Python_Projects/blob/master/15-Model_Development.py)
+
+<br/>
+<br/>
+
 ## 4. Model Evaluation
 
 
