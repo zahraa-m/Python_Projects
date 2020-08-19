@@ -47,7 +47,7 @@ lre.fit(x_train_1[['horsepower']], y_train_1)
 print("R^2 for testing data:", lre.score(x_test_1[['horsepower']], y_test_1))
 print("R^2 for training data:", lre.score(x_train_1[['horsepower']], y_train_1))
 
-# Cross Validation
+# Cross Validation CV
 from sklearn.model_selection import cross_val_score
 # No. of folds (cv) = 4
 Rcross = cross_val_score(lre, x_data[['horsepower']], y_data, cv=4)
