@@ -30,3 +30,15 @@ def PollyPlot(xtrain, xtest, y_train, y_test, lr, poly_transform):
     plt.ylabel('Price')
     plt.legend()
 
+
+# Split the data for training and testing
+y_data = df['price']
+x_data = df.drop('price', axis=1)
+
+from sklearn.model_selection import train_test_split
+x_train_1, x_test_1, y_train_1, y_test_1 = train_test_split(x_data, y_data, test_size=0.30, random_state=0)
+print(x_test_1.shape[0])
+print(x_train_1.shape[0])
+
+
+
