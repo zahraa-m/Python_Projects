@@ -9,9 +9,9 @@ df.to_csv('module_5_auto.csv')
 df = df._get_numeric_data()
 
 
-def distplot(rfunction, bunction, rname, bname, title):
+def distplot(rfunction, bfunction, rname, bname, title):
     ax1 = sns.distplot(rfunction, hist=False, color="r", label=rname)
-    ax2 = sns.distplot(bunction, hist=False, color="b", label=bname, ax=ax1)
+    ax2 = sns.distplot(bfunction, hist=False, color="b", label=bname, ax=ax1)
     plt.title(title)
     plt.xlabel('Price (in dollars)')
     plt.ylabel('Proportion of Cars')
