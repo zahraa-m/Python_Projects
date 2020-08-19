@@ -36,9 +36,27 @@ y_data = df['price']
 x_data = df.drop('price', axis=1)
 
 from sklearn.model_selection import train_test_split
-x_train_1, x_test_1, y_train_1, y_test_1 = train_test_split(x_data, y_data, test_size=0.30, random_state=0)
-print(x_test_1.shape[0])
-print(x_train_1.shape[0])
+x_train_1, x_test_1, y_train_1, y_test_1 = train_test_split(x_data, y_data, test_size=0.1, random_state=0)
+print("No. of rows in test data:", x_test_1.shape[0])
+print("No. of rows in training data:", x_train_1.shape[0])
 
+# linear regression modelling
+from sklearn.linear_model import LinearRegression
+lre = LinearRegression()
+lre.fit(x_train_1[['horsepower']], y_train_1)
+print("R^2 for testing data:", lre.score(x_test_1[['horsepower']], y_test_1))
+print("R^2 for training data:", lre.score(x_train_1[['horsepower']], y_train_1))
 
+# Cross Validation
+from sklearn.model_selection import cross_val_score
+# No. of folds (cv) = 4
+Rcross = cross_val_score(lre, x_data[['horsepower']], y_data, cv=4)
+print("cv mean", Rcross.mean(), "and CV std:", Rcross.std())
+print("cv array", Rcross)
+print(Rcross[1])
+
+# Predication by using CV
+from sklearn.model_selection import cross_val_predict
+pr_y = cross_val_predict(lre, x_data[['horsepower']], y_data, cv=4)
+print("Predicted y", pr_y[0:5])
 
