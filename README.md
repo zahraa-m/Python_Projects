@@ -1,5 +1,5 @@
 # Data Science with Python
-This repository is for Data Analysis with Python [course](https://cognitiveclass.ai/courses/data-analysis-python). I took this course for practicing Data Science. I used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/auto.csv) that has 26 attributes (columns) as shown in the table below and 205 instances (rows). The goal is to create models for predicting the price of cars, as well as, evaluate the model. 
+This repository is for Data Analysis with Python [course](https://cognitiveclass.ai/courses/data-analysis-python). I took this course for practicing Data Science. I used automobile [Data](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DA0101EN/auto.csv) that has 26 attributes (columns) as shown in the table below and 205 instances (rows). The goal is to create models for predicting the price of cars. 
 
 | Column | symboling | normalized-losses | make | fuel-type | aspiration | num-of-doors | body-style | drive-wheels | engine-location | wheel-base | length | width | height | curb-weight | engine-type | num-of-cylinders | engine-size | fuel-system | bore | stroke | compression-ratio | horsepower | peak-rpm | city-mpg | highway-mpg | price |
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -99,9 +99,5 @@ I used pipeline method as a way to shorten the processing of the data as shown i
 ### R-squared (R^2) and Mean Squared Error (MSE)
 I calculated the accuracy of the models by using R^2 and MSE. 
 
-<br/>
-<br/>
-
-## 4. Model Evaluation
 
 
